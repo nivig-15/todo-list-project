@@ -4,7 +4,7 @@ A todo list app
 
 ### General steps to follow when creating a project
 
-- Thinking about the UI
+- UI design
 - Functionality
 	- Add a TODO
 	- Delete a TODO
@@ -12,10 +12,9 @@ A todo list app
 	- total items count
 - Data
 	- tasks - an array
-	- task - {done, text, id}
 - Functions (in code)
 	- addTodo
 	- deleteTodo
 	- checkTodo
-	- renderTodosList
+	- countTaskList
 	- showNotification
