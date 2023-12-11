@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#container {
+  width: 100%;
+  min-height:100vh;
+  background: linear-gradient(135deg,rgb(93, 93, 234),rgb(240, 110, 240),rgb(145, 238, 145));
+  padding:15px;
+}
+.todo-app{
+  background-color: white;
+  width:100%;
+  max-width:540px;
+  border-radius:20px;
+  margin:70px auto 30px;
+  padding:20px 30px 30px;
+}
+.todo-app h1{
+  display:flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo-app h1 img{
+  width:40px;
+  height:35px;
+}
+.row{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgrey;
+  border-radius: 20px;
+  padding-left:20px;
+}
+.add-task{
+  flex:1;
+  outline:none;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 5px;
+  background-color: transparent;
+  font-size: 16px;
+}
+.row button{
+  outline:none;
+  border:none;
+  border-radius:50%;
+  cursor:pointer;
+  margin-right:20px;
+}
+.row button img{
+  width:35px;
+  height:35px;
+}
+ul li{
+  list-style: none;
+  font-size: 18px;
+  padding:12px 8px 12px 5px;
+  user-select: none;
+  cursor: pointer;
+  margin-left:50px;
+  margin-top:10px;
+  position: relative;
+}
+
+ul li::before{
+  content:'';
+  position:absolute;
+  width:25px;
+  height:25px;
+  border-radius: 50%;
+  background-image: url('radio.png');
+  background-position: center;
+  background-size: cover;
+  top:12px;
+  left:-25px;
+}
+ul li.check-mark
+{
+  text-decoration: line-through;
+}
+ul li.check-mark::before{
+  background-image: url('check-mark.png');
+}
+
+.delete-btn{
+    height: 28px;
+    padding: 5px 0px;
+    border-radius: 3px;
+    position:absolute;
+    right:0;
+}
+.delete-btn:hover {
+  background: #f9f8f8;
+  border-radius: 30px;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+#total-tasks, #completed, #uncompleted{
+  margin-bottom: 20px;
+  font-size: 17px;
+  margin-left: 2px;
+  color: gray;
+  padding:10px;
+}

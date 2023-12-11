@@ -1,0 +1,29 @@
+
+<html>
+  <head>
+    <title>Todo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="container">
+      <div class="todo-app">
+        <h1>Todo List App <img src="todo-list.png"></h1>
+        <div class="row">
+          <input placeholder="Add a task" class="add-task" id="add"/>
+          <button onClick="addTask()"><img src="plus.png"></button>
+        </div>
+        <ul id="list">
+          <!--
+          <li class="check-mark">Task 1</li>
+          <li class="check-mark">Task 2</li>
+          <li class="check-mark">Task 3</li>-->
+       </ul>
+        <span id="total-tasks"><hr>Total tasks: <span id="tasks-counter">0</span></span>
+        <span id="completed">Completed: <span id="completed-counter">0</span></span>
+        <span id="uncompleted">Uncompleted: <span id="uncompleted-counter">0</span></span>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
